@@ -1,4 +1,4 @@
-# 🌱 CuacaTani — Rekomendasi Waktu Tanam Berdasarkan Prakiraan Cuaca
+# 🌱 PLANTion — Rekomendasi Waktu Tanam Berdasarkan Prakiraan Cuaca
 
 CuacaTani adalah aplikasi berbasis web yang membantu petani menentukan **waktu tanam yang lebih sesuai berdasarkan prakiraan cuaca dan kebutuhan cuaca tanaman**.
 

@@ -1,6 +1,6 @@
-# 🌱 PLANTion — Rekomendasi Waktu Tanam Berdasarkan Prakiraan Cuaca
+# 🌱 PLANTion : Rekomendasi Waktu Tanam Berdasarkan Prakiraan Cuaca
 
-CuacaTani adalah aplikasi berbasis web yang membantu petani menentukan **waktu tanam yang lebih sesuai berdasarkan prakiraan cuaca dan kebutuhan cuaca tanaman**.
+PLANTion adalah aplikasi berbasis web yang membantu petani menentukan **waktu tanam yang lebih sesuai berdasarkan prakiraan cuaca dan kebutuhan cuaca tanaman**.
 
 Sistem mengambil data prakiraan cuaca berdasarkan lokasi lahan, kemudian membandingkannya dengan kebutuhan cuaca tanaman menggunakan **rule-based logic**. Hasil analisis ditampilkan dalam bentuk rekomendasi sederhana seperti **"Disarankan Menanam"**, **"Pertimbangkan"**, atau **"Tunda Menanam"**.
 
@@ -33,7 +33,7 @@ Project ini dikembangkan sebagai bentuk penerapan **SDG 2.4**, khususnya dalam m
 
 # 🌾 Tentang Project
 
-**CuacaTani** dirancang untuk membantu petani dalam mengambil keputusan sederhana terkait waktu tanam.
+**PLANTion** dirancang untuk membantu petani dalam mengambil keputusan sederhana terkait waktu tanam.
 
 Petani dapat:
 
@@ -55,13 +55,13 @@ Kondisi cuaca merupakan salah satu faktor yang berpengaruh terhadap kegiatan per
 
 Namun, tidak semua petani memiliki akses terhadap informasi cuaca yang mudah dipahami dan dikaitkan langsung dengan kebutuhan tanaman.
 
-Oleh karena itu, **CuacaTani** dibuat untuk menghubungkan informasi prakiraan cuaca dengan kebutuhan cuaca tanaman sehingga menghasilkan rekomendasi yang lebih sederhana dan mudah dipahami.
+Oleh karena itu, **PLANTion** dibuat untuk menghubungkan informasi prakiraan cuaca dengan kebutuhan cuaca tanaman sehingga menghasilkan rekomendasi yang lebih sederhana dan mudah dipahami.
 
 ---
 
 # 🎯 Tujuan
 
-Tujuan utama CuacaTani adalah:
+Tujuan utama PLANTion adalah:
 
 1. Membantu petani memperoleh informasi prakiraan cuaca berdasarkan lokasi lahannya.
 2. Membantu petani menentukan waktu tanam berdasarkan kondisi cuaca.
@@ -275,7 +275,7 @@ Admin dapat melihat riwayat rekomendasi yang dihasilkan oleh sistem.
 
 # 🧠 Rule-Based Recommendation
 
-CuacaTani menggunakan pendekatan **rule-based system**.
+PLANTion menggunakan pendekatan **rule-based system**.
 
 Sistem tidak melakukan prediksi menggunakan machine learning. Sebaliknya, sistem menggunakan aturan yang telah ditentukan berdasarkan kebutuhan cuaca tanaman.
 
@@ -493,7 +493,7 @@ jenis_tanaman ─────┘
 Contoh struktur project:
 
 ```text
-cuacatani/
+plantion/
 │
 ├── assets/
 │   ├── css/
@@ -549,7 +549,7 @@ cuacatani/
 
 # 🌐 API Cuaca
 
-CuacaTani menggunakan API cuaca untuk memperoleh data berdasarkan koordinat lahan.
+PLANTion menggunakan API cuaca untuk memperoleh data berdasarkan koordinat lahan.
 
 API yang dapat digunakan:
 
@@ -594,13 +594,13 @@ Rekomendasi
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/cuacatani.git
+git clone https://github.com/username/plantion.git
 ```
 
 Masuk ke folder project:
 
 ```bash
-cd cuacatani
+cd plantion
 ```
 
 ## 2. Pindahkan ke XAMPP
@@ -608,7 +608,7 @@ cd cuacatani
 Letakkan folder project di:
 
 ```text
-C:\xampp\htdocs\cuacatani
+C:\xampp\htdocs\plantion
 ```
 
 ## 3. Jalankan XAMPP
@@ -631,7 +631,7 @@ http://localhost/phpmyadmin
 Buat database:
 
 ```text
-cuacatani
+plantion
 ```
 
 Kemudian import file SQL yang tersedia di project.
@@ -639,7 +639,7 @@ Kemudian import file SQL yang tersedia di project.
 Contoh:
 
 ```text
-database/cuacatani.sql
+database/plantion.sql
 ```
 
 ## 5. Konfigurasi Database
@@ -656,7 +656,7 @@ Sesuaikan konfigurasi:
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "cuacatani";
+$database = "plantion";
 ```
 
 ---
@@ -666,7 +666,7 @@ $database = "cuacatani";
 Setelah Apache dan MySQL aktif, buka browser:
 
 ```text
-http://localhost/cuacatani
+http://localhost/plantion
 ```
 
 Kemudian:
@@ -774,7 +774,7 @@ Beberapa aspek keamanan yang diterapkan:
 
 # 📈 Pengembangan Selanjutnya
 
-CuacaTani dapat dikembangkan dengan fitur:
+PLANTion dapat dikembangkan dengan fitur:
 
 * 🌧️ Grafik prakiraan cuaca
 * 🗺️ Pemilihan lokasi menggunakan peta
@@ -792,7 +792,7 @@ CuacaTani dapat dikembangkan dengan fitur:
 
 # 🌍 SDG 2.4
 
-CuacaTani mendukung **Sustainable Development Goal (SDG) 2**, khususnya target **2.4**, yang berfokus pada sistem produksi pangan yang berkelanjutan dan praktik pertanian yang lebih adaptif terhadap perubahan iklim.
+PLANTion mendukung **Sustainable Development Goal (SDG) 2**, khususnya target **2.4**, yang berfokus pada sistem produksi pangan yang berkelanjutan dan praktik pertanian yang lebih adaptif terhadap perubahan iklim.
 
 Aplikasi ini membantu dengan menyediakan informasi cuaca dan rekomendasi waktu tanam sehingga petani dapat mempertimbangkan kondisi lingkungan sebelum melakukan penanaman.
 
@@ -817,14 +817,13 @@ Project ini masih dalam tahap pengembangan dan dapat mengalami perubahan pada st
 
 # 👨‍💻 Kontributor
 
-Project **CuacaTani** dikembangkan sebagai project akademik.
+Project **PLANTion** dikembangkan sebagai project akademik.
 
 **Team:**
 
-* Nama Anggota 1
-* Nama Anggota 2
-* Nama Anggota 3
-
+* 140810250011	Fayha Najla Rahman
+* 140810250056	Khaled Meshaal Ahmadinejad Mujaddid Thariq Mardova Fadhilah
+* 140810250062	Theresia Monica Emmanuella Situmeang
 ---
 
 # 📄 Lisensi
@@ -835,4 +834,4 @@ Project ini dibuat untuk keperluan pembelajaran dan pengembangan akademik.
 
 ## 💡 Catatan
 
-Rekomendasi yang diberikan CuacaTani merupakan **rekomendasi berbasis aturan dan prakiraan cuaca**, bukan pengganti keputusan profesional di bidang pertanian. Kondisi aktual di lapangan dapat berbeda dari prakiraan.
+Rekomendasi yang diberikan PLANTion merupakan **rekomendasi berbasis aturan dan prakiraan cuaca**, bukan pengganti keputusan profesional di bidang pertanian. Kondisi aktual di lapangan dapat berbeda dari prakiraan.

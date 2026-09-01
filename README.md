@@ -480,6 +480,9 @@ plantion/
 
 ---
 
+# Mockup Kasar
+
+
 # 🌐 API Cuaca
 
 PLANTion menggunakan API cuaca untuk memperoleh data berdasarkan koordinat lahan.

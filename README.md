@@ -481,7 +481,7 @@ plantion/
 ---
 
 # Mockup Kasar
-
+![Mockup](plantion-mockup-full)
 
 # 🌐 API Cuaca
 

@@ -59,7 +59,18 @@ Oleh karena itu, **PLANTion** dibuat untuk menghubungkan informasi prakiraan cua
 
 ---
 
-# 🎯 Tujuan
+# ⚙️ Fungsi
+
+PLANTion berfungsi untuk:
+
+1. Mengelola akun dan data lahan petani.
+2. Menampilkan prakiraan cuaca berdasarkan lokasi lahan.
+3. Membandingkan kondisi cuaca dengan kebutuhan tanaman.
+4. Memberikan rekomendasi waktu tanam berdasarkan rule-based system.
+5. Menampilkan alasan dan menyimpan riwayat rekomendasi.
+---
+
+# 💡 Tujuan
 
 Tujuan utama PLANTion adalah:
 
@@ -70,6 +81,13 @@ Tujuan utama PLANTion adalah:
 5. Mendukung praktik pertanian yang lebih adaptif terhadap kondisi iklim.
 
 ---
+
+# 🎯 Target Pengguna
+
+Target pengguna PLANTion adalah petani maupun masyarakat atau individu yang ingin menanam tanaman dan membutuhkan informasi prakiraan cuaca sebagai pertimbangan dalam menentukan waktu tanam yang lebih sesuai.
+
+---
+
 
 # ✨ Fitur
 

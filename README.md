@@ -8,27 +8,6 @@ Project ini dikembangkan sebagai bentuk penerapan **SDG 2.4**, khususnya dalam m
 
 ---
 
-## 📌 Daftar Isi
-
-* [Tentang Project](#tentang-project)
-* [Latar Belakang](#latar-belakang)
-* [Fungsi](#fungsi)
-* [Tujuan](#tujuan)
-* [Target Pengguna](#target-pengguna)
-* [Fitur](#fitur)
-* [Alur Sistem](#alur-sistem)
-* [Rule-Based Recommendation](#rule-based-recommendation)
-* [Contoh Scoring](#contoh-scoring)
-* [Teknologi](#teknologi)
-* [Struktur Database](#struktur-database)
-* [Struktur Folder](#struktur-folder)
-* [API Cuaca](#api-cuaca)
-* [Contoh Penggunaan](#contoh-penggunaan)
-* [SDG 2.4](#sdg-24)
-* [Kontributor](#kontributor)
-
----
-
 # 🌾 Tentang Project
 
 **PLANTion** dirancang untuk membantu petani dalam mengambil keputusan sederhana terkait waktu tanam.

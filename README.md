@@ -173,61 +173,6 @@ Informasi dapat meliputi:
 
 ---
 
-# 👨‍💼 Fitur Admin
-
-Admin bertugas mengelola data yang digunakan oleh sistem.
-
-### 1. Dashboard Admin
-
-Menampilkan:
-
-* jumlah petani,
-* jumlah lahan,
-* jumlah tanaman,
-* jumlah rekomendasi.
-
-### 2. Kelola Data Tanaman
-
-Admin dapat melakukan:
-
-* tambah tanaman,
-* edit tanaman,
-* hapus tanaman,
-* melihat daftar tanaman.
-
-Setiap tanaman memiliki kebutuhan cuaca tertentu.
-
-Contoh:
-
-| Tanaman | Suhu Min | Suhu Max | Hujan Min | Hujan Max |
-| ------- | -------: | -------: | --------: | --------: |
-| Padi    |     20°C |     30°C |      5 mm |     50 mm |
-| Jagung  |     21°C |     30°C |      5 mm |     40 mm |
-| Cabai   |     20°C |     30°C |      2 mm |     20 mm |
-
-*Nilai di atas merupakan contoh aturan dan dapat disesuaikan berdasarkan sumber agronomi yang digunakan.*
-
-### 3. Kelola Aturan Rekomendasi
-
-Admin dapat mengatur kondisi yang digunakan sistem untuk menentukan rekomendasi.
-
-Contoh:
-
-* batas suhu,
-* batas curah hujan,
-* probabilitas hujan,
-* tingkat kesesuaian.
-
-### 4. Kelola User
-
-Admin dapat melihat dan mengelola akun petani.
-
-### 5. Monitoring Rekomendasi
-
-Admin dapat melihat riwayat rekomendasi yang dihasilkan oleh sistem.
-
----
-
 # 🔄 Alur Sistem
 
 ```text
@@ -419,8 +364,7 @@ users
 ├── id_user
 ├── nama
 ├── email
-├── password
-└── role
+└── password
 
 lokasi_lahan
 │
@@ -527,12 +471,6 @@ plantion/
 │       ├── index.php
 │       └── detail.php
 │
-├── admin/
-│   ├── dashboard.php
-│   ├── users/
-│   ├── tanaman/
-│   └── rekomendasi/
-│
 ├── api/
 │   └── weather.php
 │
@@ -586,108 +524,6 @@ Rule-Based System
         ↓
 Rekomendasi
 ```
-
----
-
-# ⚙️ Instalasi
-
-## 1. Clone Repository
-
-```bash
-git clone https://github.com/username/plantion.git
-```
-
-Masuk ke folder project:
-
-```bash
-cd plantion
-```
-
-## 2. Pindahkan ke XAMPP
-
-Letakkan folder project di:
-
-```text
-C:\xampp\htdocs\plantion
-```
-
-## 3. Jalankan XAMPP
-
-Aktifkan:
-
-```text
-Apache
-MySQL
-```
-
-## 4. Buat Database
-
-Buka:
-
-```text
-http://localhost/phpmyadmin
-```
-
-Buat database:
-
-```text
-plantion
-```
-
-Kemudian import file SQL yang tersedia di project.
-
-Contoh:
-
-```text
-database/plantion.sql
-```
-
-## 5. Konfigurasi Database
-
-Buka:
-
-```text
-config/database.php
-```
-
-Sesuaikan konfigurasi:
-
-```php
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "plantion";
-```
-
----
-
-# 🚀 Cara Menjalankan
-
-Setelah Apache dan MySQL aktif, buka browser:
-
-```text
-http://localhost/plantion
-```
-
-Kemudian:
-
-```text
-Register
-   ↓
-Login
-   ↓
-Tambah Lahan
-   ↓
-Pilih Tanaman
-   ↓
-Lihat Prakiraan Cuaca
-   ↓
-Generate Rekomendasi
-   ↓
-Lihat Hasil
-```
-
----
 
 # 👨‍🌾 Contoh Penggunaan
 
@@ -758,60 +594,12 @@ DISARANKAN MENANAM
 
 ---
 
-# 🔐 Keamanan
-
-Beberapa aspek keamanan yang diterapkan:
-
-* Password disimpan menggunakan `password_hash()`.
-* Login menggunakan session.
-* Query database menggunakan prepared statement.
-* Validasi input pengguna.
-* Pembatasan akses berdasarkan role.
-* Petani hanya dapat mengelola lahan miliknya.
-* Admin memiliki akses ke pengelolaan data sistem.
-
----
-
-# 📈 Pengembangan Selanjutnya
-
-PLANTion dapat dikembangkan dengan fitur:
-
-* 🌧️ Grafik prakiraan cuaca
-* 🗺️ Pemilihan lokasi menggunakan peta
-* 🔔 Notifikasi rekomendasi
-* 📱 Responsive design
-* 📊 Statistik kondisi cuaca
-* 🌱 Penambahan lebih banyak jenis tanaman
-* 📚 Referensi kebutuhan cuaca berdasarkan sumber pertanian
-* 📅 Kalender tanam
-* 🌡️ Analisis kelembapan tanah
-* 📈 Perbandingan prakiraan dengan kondisi historis
-* 🤖 Pengembangan dari rule-based menjadi machine learning
-
----
-
 # 🌍 SDG 2.4
 
 PLANTion mendukung **Sustainable Development Goal (SDG) 2**, khususnya target **2.4**, yang berfokus pada sistem produksi pangan yang berkelanjutan dan praktik pertanian yang lebih adaptif terhadap perubahan iklim.
 
 Aplikasi ini membantu dengan menyediakan informasi cuaca dan rekomendasi waktu tanam sehingga petani dapat mempertimbangkan kondisi lingkungan sebelum melakukan penanaman.
 
----
-
-# 👥 Role Sistem
-
-| Role       | Akses                                                       |
-| ---------- | ----------------------------------------------------------- |
-| **Petani** | Kelola lahan, pilih tanaman, lihat cuaca, lihat rekomendasi |
-| **Admin**  | Kelola petani, tanaman, aturan, dan monitoring rekomendasi  |
-
----
-
-# 📌 Status Project
-
-**Status:** `Development`
-
-Project ini masih dalam tahap pengembangan dan dapat mengalami perubahan pada struktur database, fitur, maupun tampilan.
 
 ---
 
@@ -826,11 +614,6 @@ Project **PLANTion** dikembangkan sebagai project akademik.
 * 140810250062	Theresia Monica Emmanuella Situmeang
 ---
 
-# 📄 Lisensi
-
-Project ini dibuat untuk keperluan pembelajaran dan pengembangan akademik.
-
----
 
 ## 💡 Catatan
 

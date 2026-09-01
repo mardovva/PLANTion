@@ -10,7 +10,6 @@ Project ini dikembangkan sebagai bentuk penerapan **SDG 2.4**, khususnya dalam m
 
 ## 📌 Daftar Isi
 
-* [Tentang Project](#-tentang-project)
 * [Tentang Project](#tentang-project)
 * [Latar Belakang](#latar-belakang)
 * [Fungsi](#fungsi)
